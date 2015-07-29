@@ -3,5 +3,7 @@ HTTP/1.1 415 Unsupported Media Type
 Connection: close
 Content-Type: text/xml
 Content-Length: 289
+Set-Cookie: foo=bar;
+Set-Cookie: bar=foo;
 
 foo

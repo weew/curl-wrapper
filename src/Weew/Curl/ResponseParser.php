@@ -31,7 +31,17 @@ class ResponseParser implements ICurlResponseParser {
             }
 
             list($key, $value) = explode(':', $line, 2);
-            $headers[trim($key)] = trim($value);
+            $key = trim($key);
+            $value = trim($value);
+            $header = array_get($headers, $key);
+
+            if ($header !== null) {
+                $header = [$header];
+                $header[] = $value;
+                $headers[$key] = $header;
+            } else {
+                $headers[$key] = $value;
+            }
         }
 
         return $headers;

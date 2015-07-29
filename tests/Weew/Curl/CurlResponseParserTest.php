@@ -14,7 +14,8 @@ class CurlResponseParserTest extends PHPUnit_Framework_TestCase {
         return [
             'Connection' => 'close',
             'Content-Type' => 'text/xml',
-            'Content-Length' => 289
+            'Content-Length' => 289,
+            'Set-Cookie' => ['foo=bar;', 'bar=foo;'],
         ];
     }
 
