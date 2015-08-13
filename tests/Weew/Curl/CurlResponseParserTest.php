@@ -12,9 +12,9 @@ class CurlResponseParserTest extends PHPUnit_Framework_TestCase {
 
     private function getHeaders() {
         return [
-            'Connection' => 'close',
-            'Content-Type' => 'text/xml',
-            'Content-Length' => 289,
+            'Connection' => ['close'],
+            'Content-Type' => ['text/xml'],
+            'Content-Length' => [289],
             'Set-Cookie' => ['foo=bar;', 'bar=foo;'],
         ];
     }

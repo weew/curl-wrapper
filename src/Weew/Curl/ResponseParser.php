@@ -14,34 +14,25 @@ class ResponseParser implements ICurlResponseParser {
         $headers = [];
 
         foreach ($lines as $line) {
-            if (strpos($line, 'HTTP/') !== false) {
-                continue;
-            }
+            $line = trim($line);
 
-            if (strlen($line) == 0) {
-                continue;
-            }
-
-            if (trim($line) == '') {
+            if ($line == '') {
                 break;
             }
 
-            if (strpos($line, ':') === false) {
+            if (strpos($line, 'HTTP/') !== false or
+                strpos($line, ':') === false
+            ) {
                 continue;
             }
 
             list($key, $value) = explode(':', $line, 2);
             $key = trim($key);
             $value = trim($value);
-            $header = array_get($headers, $key);
+            $values = array_get($headers, $key, []);
 
-            if ($header !== null) {
-                $header = [$header];
-                $header[] = $value;
-                $headers[$key] = $header;
-            } else {
-                $headers[$key] = $value;
-            }
+            $values[] = $value;
+            $headers[$key] = $values;
         }
 
         return $headers;
