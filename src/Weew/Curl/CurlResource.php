@@ -32,7 +32,7 @@ class CurlResource implements ICurlResource {
      *
      * @return mixed
      */
-    public function getOption($option) {
+    public function getInfo($option) {
         return curl_getinfo($this->resource, $option);
     }
 

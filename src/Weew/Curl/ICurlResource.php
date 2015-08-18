@@ -14,7 +14,7 @@ interface ICurlResource {
      *
      * @return mixed
      */
-    function getOption($option);
+    function getInfo($option);
 
     /**
      * @return string
