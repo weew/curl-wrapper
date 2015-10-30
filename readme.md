@@ -12,7 +12,7 @@
 
 ## Installation
 
-`composer require/weew-php-curl-wrapper`
+`composer require weew/php-curl-wrapper`
 
 ## Introduction
 
