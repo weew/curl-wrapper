@@ -1,9 +1,11 @@
 # Simple CURL resource wrapper
 
-[![Build Status](https://travis-ci.org/weew/php-curl-wrapper.svg?branch=master)](https://travis-ci.org/weew/php-curl-wrapper)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/weew/php-curl-wrapper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/weew/php-curl-wrapper/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/weew/php-curl-wrapper/badge.svg?branch=master&service=github)](https://coveralls.io/github/weew/php-curl-wrapper?branch=master)
-[![License](https://poser.pugx.org/weew/php-curl-wrapper/license)](https://packagist.org/packages/weew/php-curl-wrapper)
+[![Build Status](https://img.shields.io/travis/weew/php-curl-wrapper.svg)](https://travis-ci.org/weew/php-curl-wrapper)
+[![Code Quality](https://img.shields.io/scrutinizer/g/weew/php-curl-wrapper.svg)](https://scrutinizer-ci.com/g/weew/php-curl-wrapper)
+[![Test Coverage](https://img.shields.io/coveralls/weew/php-curl-wrapper.svg)](https://coveralls.io/github/weew/php-curl-wrapper)
+[![Dependencies](https://img.shields.io/versioneye/d/php/weew:php-curl-wrapper.svg)](https://versioneye.com/php/weew:php-curl-wrapper)
+[![Version](https://img.shields.io/packagist/v/weew/php-curl-wrapper.svg)](https://packagist.org/packages/weew/php-curl-wrapper)
+[![Licence](https://img.shields.io/packagist/l/weew/php-curl-wrapper.svg)](https://packagist.org/packages/weew/__PACKAGE__)
 
 ## Table of contents
 
