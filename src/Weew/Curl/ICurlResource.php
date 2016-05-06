@@ -5,6 +5,13 @@ namespace Weew\Curl;
 interface ICurlResource {
     /**
      * @param $option
+     *
+     * @return mixed
+     */
+    function getOption($option);
+
+    /**
+     * @param $option
      * @param $value
      */
     function setOption($option, $value);
@@ -15,6 +22,16 @@ interface ICurlResource {
      * @return mixed
      */
     function getInfo($option);
+
+    /**
+     * @return mixed
+     */
+    function getErrorCode();
+
+    /**
+     * @return mixed
+     */
+    function getErrorMessage();
 
     /**
      * @return string
